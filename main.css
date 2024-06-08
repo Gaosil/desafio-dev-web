@@ -1,0 +1,96 @@
+body {
+  margin: 0; 
+  padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.logo {
+  max-height: 4rem;
+  width: auto;
+  height: auto;
+  margin-left: 1rem;
+}
+
+nav {
+  white-space: nowrap;
+  display: flex;
+}
+
+nav a {
+  margin: 2rem;
+  font-family: sans-serif;
+  color: #5c5c5c;
+  font-size: 18px;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.search {
+  color: #5c5c5c;
+  padding: 0.6rem;
+  font-size: 18px;
+  border-radius: 0.8rem;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5; 
+  width: 50rem;
+  margin-left: 5rem;
+}
+
+.user {
+  max-height:3rem;
+  max-width: 4rem;
+  margin-left: 28rem;
+  margin-top: 0.5rem;
+}
+
+.info {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.cards {
+  width: 100%;
+  height: 35rem;
+  border-radius: 4px;
+  display: flex;
+}
+
+.cards p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: all .5s;
+  background: #212121;
+  border: 1px solid #dddcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards p:hover {
+  flex: 4;
+}
+
+footer {
+  margin-top: 2rem;
+  height: 10rem;
+  background-color: #1a63bd;
+  width: 100%;
+ }
