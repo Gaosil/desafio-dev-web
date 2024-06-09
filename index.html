@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <header id="bannerPage">
         <div>
-            <img class="logo" src="img/logo.png"/>
+            <img class="logo" src="img/logo.png" />
         </div>
         <nav>
-            <a>Início</a>
-            <a>Quem somos</a>
-           <a>Contato</a>
+            <div>Início</div>
+            <div onclick="redirectQuemSomos()">Quem somos</div>
+            <div onclick="redirectContatos()">Contato</div>
         </nav>
-        <div>
+        <div class="search-container">
             <input class="search" name="text" placeholder="Busca..." type="search">
         </div>
-        <div>
-            <img class="user" src="img/user.png"/>
+        <div class="user-container">
+            <img class="user" src="img/user.png" />
         </div>
     </header>
-    <article>
+    <section>
         <div class="cards">
-            <p><img src="img/estetoscopio.jpg" /></p>
-            <p><img src="img/tecnologia.jpg" /></p>
-            <p><img src="img/teleatendimento.jpg" /></p>
+            <div>
+                <img src="img/estetoscopio.jpg" />
+                <p class="text-description">
+                    Durante enchentes, evite contato com água contaminada para prevenir doenças. 
+                    Consulte um médico ao surgirem sintomas ou ferimentos para tratamento adequado. 
+                    Cuidar da saúde é essencial para proteger-se durante desastres naturais.
+                </p>
+            </div>
+            <div>
+                <img src="img/tecnologia.jpg" />
+                <p class="text-description">
+                    Nesse momento, é crucial cuidar da saúde física e mental. 
+                    Priorize alimentos não perecíveis e evite áreas alagadas. 
+                    Mantenha-se hidratado e busque abrigo seguro. 
+                    Além disso, cuide da saúde emocional, procurando apoio e mantendo a calma diante da situação desafiadora. 
+                </p>
+            </div>
+            <div>
+                <img src="img/teleatendimento.jpg" />
+                <p class="text-description">
+                    Para receber mais dicas sobre saúde e bem-estar diretamente em seu email, inscreva-se em nossa newsletter. 
+                    Você terá acesso a informações valiosas sobre exercícios, nutrição e cuidados com a saúde mental, 
+                    tudo enviado diretamente para sua caixa de entrada. Estamos comprometidos em ajudá-lo a alcançar seus objetivos de saúde e bem-estar.
+                </p>
+            </div>
         </div>
-    </article>
+    </section>
+    <section>
+        <div class="newsletter">
+            <p class="title-newsletter">Receba nossas dicas</p>
+            <p class="body-newsletter">Assine nossa newsletter e receba dicas sobre cuidados com saúde em seu e-mail!</p>
+            <div class="search-container">
+                <input class="search" name="text" placeholder="example@email.com" type="email">
+            </div>
+        </div>
+    </section>
 </body>
 
 <footer>
 </footer>
+
+<script src="fileMain.js"></script>
 </html>
